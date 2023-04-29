@@ -11,6 +11,6 @@ export class AppComponent {
 
   loginService = inject(LoginService)
   toggleLogin(){
-    this.loginService.isLegginged = !this.loginService.isLegginged
+    this.loginService.isLegginged.next(!this.loginService.isLegginged.value)
   }
 }

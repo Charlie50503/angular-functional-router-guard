@@ -7,5 +7,5 @@
   </li>
 </ul>
 <button (click)="toggleLogin()">toggle login</button>
-{{loginService.isLegginged}}
+{{ loginService.isLegginged | async }}
 <router-outlet></router-outlet>
